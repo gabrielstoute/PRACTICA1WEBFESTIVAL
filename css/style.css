@@ -1,0 +1,8 @@
+/* variables*/
+:root {
+  --text-color: white;
+  --bg-color-primary: rgb(255, 80, 120);
+  --bg-color-menu: rgb(30, 0, 60);
+  --bg-color-header: rgb(120, 40, 220);
+  --transition-time: 0.3s;
+}
