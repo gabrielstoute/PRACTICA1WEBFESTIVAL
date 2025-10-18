@@ -32,3 +32,24 @@ main,
 footer {
   padding: 1.2rem;
 }
+/* header */
+header {
+  background-color: var(--bg-color-header);
+  color: var(--text-color);
+  text-align: center; /* centramos todo el texto del header */
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+header > div > p {
+  color: yellow;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
