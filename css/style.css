@@ -6,3 +6,29 @@
   --bg-color-header: rgb(120, 40, 220);
   --transition-time: 0.3s;
 }
+/* cosas basicas */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+/* cosas generales */
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+header,
+nav,
+main,
+footer {
+  padding: 1.2rem;
+}
