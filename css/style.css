@@ -241,3 +241,18 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
 }
+/* codigo de media query para celular */
+@media screen and (max-width: 600px) {
+  main > section.hero {
+    flex-direction: column;
+  }
+
+  main > section.hero > div.content-text,
+  main > section.hero > div.content-features {
+    width: 100%;
+  }
+
+  #galeria > .gallery-cont {
+    grid-template-columns: auto;
+  }
+}
