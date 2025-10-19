@@ -53,3 +53,77 @@ header > div > p {
   font-size: 1rem;
   margin-top: 0.5rem;
 }
+/* menu */
+nav {
+  background-color: var(--bg-color-menu);
+}
+
+nav > .menu_pr {
+  list-style: none;
+  display: flex; /* menú horizontal */
+  justify-content: space-evenly;
+}
+
+nav > .menu_pr a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: var(--transition-time);
+}
+/* 2 */
+nav > .menu_pr a:hover {
+  color: var(--bg-color-menu);
+  background-color: var(--text-color);
+}
+/* main */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* 2 */
+main > section.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: var(--bg-color-primary);
+  color: var(--text-color);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+main > section.hero > div.content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+
+main > section.hero > div.content-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+main > section.hero > div.content-text span {
+  color: yellow;
+}
+
+main > section.hero > div.content-text button {
+  width: 150px;
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background-color: yellow;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: var(--transition-time);
+}
+
+main > section.hero > div.content-text button:hover {
+  background-color: white;
+  color: var(--bg-color-primary);
+}
