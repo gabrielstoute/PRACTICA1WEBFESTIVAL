@@ -159,3 +159,85 @@ main > section.hero > div.content-features > .column > .feature > div {
   );
   border-radius: 0 0 10px 10px;
 }
+/* programa */
+#programa {
+  text-align: center;
+  padding: 2rem;
+}
+
+#programa h2 {
+  font-size: 2rem;
+  color: var(--bg-color-header);
+  margin-bottom: 1rem;
+}
+
+.programa-cont {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.dia {
+  background-color: var(--bg-color-primary);
+  color: var(--text-color);
+  padding: 1rem;
+  border-radius: 10px;
+  width: 200px;
+  transition: var(--transition-time);
+}
+
+.dia:hover {
+  transform: scale(1.05);
+  background-color: var(--bg-color-header);
+}
+/* fotos */
+#galeria {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+#galeria > h2 {
+  font-size: 2rem;
+  color: var(--bg-color-header);
+  margin-bottom: 2rem;
+}
+
+#galeria > .gallery-cont {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+/* contacto */
+#contacto {
+  background-color: var(--bg-color-primary);
+  color: var(--text-color);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 12px;
+}
+
+#contacto button {
+  background-color: yellow;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: var(--transition-time);
+}
+
+#contacto button:hover {
+  background-color: white;
+  color: var(--bg-color-primary);
+}
+/* footer */
+footer {
+  text-align: center;
+  background-color: var(--bg-color-menu);
+  color: var(--text-color);
+  padding: 1rem;
+  margin-top: 2rem;
+}
