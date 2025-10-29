@@ -21,3 +21,67 @@
     </nav>
   </body>
 </html>
+<main>
+  <section id="entradas">
+    <h2>Tipos de Entradas</h2>
+    <p>Elige tu experiencia y únete al festival más vibrante del año.</p>
+
+    <div class="programa-cont">
+      <div class="dia">
+        <h3>General</h3>
+        <p>Acceso por un día<br />Precio: $50</p>
+      </div>
+      <div class="dia">
+        <h3>VIP</h3>
+        <p>Acceso 3 días + zona especial<br />Precio: $120</p>
+      </div>
+      <div class="dia">
+        <h3>Premium</h3>
+        <p>Acceso 3 días + backstage + regalos<br />Precio: $200</p>
+      </div>
+    </div>
+
+    <h2 style="margin-top: 2rem">Compra tus boletos</h2>
+    <form id="formTickets">
+      <label for="nombre">Nombre completo:</label><br />
+      <input type="text" id="nombre" name="nombre" /><br /><br />
+
+      <label for="correo">Correo electrónico:</label><br />
+      <input type="email" id="correo" name="correo" /><br /><br />
+
+      <label for="cantidad">Cantidad de entradas:</label><br />
+      <input type="number" id="cantidad" name="cantidad" min="1" /><br /><br />
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+</main>
+<footer>
+  <p>© 2025 New York Sound Fest – Todos los derechos reservados.</p>
+</footer>
+ <script>
+      
+      const form = document.getElementById("formTickets");
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const nombre = document.getElementById("nombre").value.trim();
+        const correo = document.getElementById("correo").value.trim();
+        const cantidad = document.getElementById("cantidad").value.trim();
+
+        if (nombre === "" || correo === "" || cantidad === "") {
+          alert("Por favor, completa todos los campos antes de enviar.");
+          return;
+        }
+
+        if (!correo.includes("@")) {
+          alert("Por favor, introduce un correo válido.");
+          return;
+        }
+
+        alert(" Gracias " + nombre + "! Tu pedido fue enviado correctamente.");
+        form.reset();
+      });
+    </script>
+  </body>
+</html>
